@@ -14,3 +14,16 @@ export const compactCurrency = abbr;
 export const formatCurrency = money;
 export const formatPercent = percent;
 export const toNumber = num;
+
+// Full backward compatibility with components from the first dashboard version.
+export const isPresent = present;
+
+export function parseMatrix(rows: Row[] | undefined, labelKey: string) {
+  const parsed = matrix(rows, labelKey);
+  return { months: parsed.months, items: parsed.items };
+}
+
+export function matrixToMonthlySeries(rows: Row[] | undefined, labelKey: string) {
+  const parsed = matrix(rows, labelKey);
+  return { data: parsed.data, series: parsed.series };
+}

@@ -10,6 +10,7 @@ components/charts/GrowthChart.tsx
 components/charts/MonthlyChart.tsx
 components/charts/ParcelChart.tsx
 lib/data.ts
+lib/types.ts
 next-env.d.ts
 next.config.js
 package.json
