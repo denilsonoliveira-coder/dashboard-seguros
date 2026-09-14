@@ -16,3 +16,8 @@ Projeto completo para substituir a versão atual.
 4. O Vercel fará o novo deploy automaticamente.
 
 Para futuras atualizações de dados, substitua apenas `public/dashboard.json`.
+
+
+## Substituição segura do repositório
+
+Antes de enviar esta versão, exclua os arquivos antigos do repositório. Em especial, não mantenha componentes removidos como `ChannelBarChart.tsx` e `PlanBarChart.tsx`. Depois envie o conteúdo deste ZIP para a raiz do repositório.
