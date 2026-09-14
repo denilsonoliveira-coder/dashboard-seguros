@@ -1,27 +1,3 @@
 "use client";
-
-import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
-import { compactNumber, formatNumber } from '@/lib/data';
-
-type Point = { mes: string; adesoes: number | null; cancelamentos: number | null; crescimento_liquido: number | null; total_base: number | null };
-
-export default function GrowthChart({ data }: { data: Point[] }) {
-  return (
-    <div className="h-[410px] w-full">
-      <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={data} margin={{ top: 8, right: 8, left: 4, bottom: 0 }}>
-          <CartesianGrid stroke="#e8edf5" strokeDasharray="3 3" vertical={false} />
-          <XAxis dataKey="mes" axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 12 }} />
-          <YAxis yAxisId="flow" tickFormatter={compactNumber} axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 11 }} width={55} />
-          <YAxis yAxisId="base" orientation="right" tickFormatter={compactNumber} axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 11 }} width={58} />
-          <Tooltip formatter={(value) => formatNumber(Number(value))} />
-          <Legend iconType="circle" />
-          <Line yAxisId="flow" type="monotone" dataKey="adesoes" name="Adesões" stroke="#2871d4" strokeWidth={2.5} dot={{ r: 3 }} connectNulls={false} />
-          <Line yAxisId="flow" type="monotone" dataKey="cancelamentos" name="Cancelamentos" stroke="#e34b5f" strokeWidth={2.5} dot={{ r: 3 }} connectNulls={false} />
-          <Line yAxisId="flow" type="monotone" dataKey="crescimento_liquido" name="Crescimento líquido" stroke="#12a66a" strokeWidth={2.5} dot={{ r: 3 }} connectNulls={false} />
-          <Line yAxisId="base" type="monotone" dataKey="total_base" name="Total da base" stroke="#0A2D87" strokeWidth={3.5} dot={{ r: 4 }} connectNulls={false} />
-        </LineChart>
-      </ResponsiveContainer>
-    </div>
-  );
-}
+import{Area,CartesianGrid,ComposedChart,Legend,Line,ResponsiveContainer,Tooltip,XAxis,YAxis}from'recharts';import{abbr,integer,percent}from'@/lib/data';
+export default function GrowthChart({data}:{data:{mes:string;total_base:number|null;crescimento_percentual_base:number|null}[]}){return <div className="h-[430px]"><ResponsiveContainer><ComposedChart data={data}><defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor="#0A2D87" stopOpacity={.42}/><stop offset="95%" stopColor="#0A2D87" stopOpacity={.04}/></linearGradient></defs><CartesianGrid stroke="#e8edf5" strokeDasharray="3 3" vertical={false}/><XAxis dataKey="mes"/><YAxis yAxisId="b" tickFormatter={abbr}/><YAxis yAxisId="p" orientation="right" tickFormatter={percent}/><Tooltip formatter={(v,n)=>n==='Crescimento percentual da base'?percent(Number(v)):integer(Number(v))}/><Legend/><Area yAxisId="b" dataKey="total_base" name="Total da base" stroke="#0A2D87" strokeWidth={3} fill="url(#area)"/><Line yAxisId="p" dataKey="crescimento_percentual_base" name="Crescimento percentual da base" stroke="#12a66a" strokeWidth={3} dot={{r:4}}/></ComposedChart></ResponsiveContainer></div>}

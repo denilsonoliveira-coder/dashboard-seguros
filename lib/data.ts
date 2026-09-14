@@ -1,63 +1,9 @@
-import { JsonRow } from './types';
-
-export const isPresent = (value: unknown): boolean =>
-  value !== null && value !== undefined && value !== '';
-
-export const toNumber = (value: unknown): number | null => {
-  if (!isPresent(value)) return null;
-  if (typeof value === 'number') return Number.isFinite(value) ? value : null;
-  if (typeof value === 'string') {
-    const normalized = value.trim().replace(/\s/g, '').replace(/\.(?=\d{3}(?:\D|$))/g, '').replace(',', '.');
-    const parsed = Number(normalized);
-    return Number.isFinite(parsed) ? parsed : null;
-  }
-  return null;
-};
-
-export const sum = (values: Array<number | null>): number =>
-  values.reduce<number>((total, value) => total + (value ?? 0), 0);
-
-export const formatCurrency = (value: number | null | undefined): string =>
-  new Intl.NumberFormat('pt-BR', {
-    style: 'currency',
-    currency: 'BRL',
-    maximumFractionDigits: 0,
-  }).format(value ?? 0);
-
-export const formatNumber = (value: number | null | undefined): string =>
-  new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 0 }).format(value ?? 0);
-
-export const formatPercent = (value: number | null | undefined): string =>
-  new Intl.NumberFormat('pt-BR', {
-    style: 'percent',
-    minimumFractionDigits: 1,
-    maximumFractionDigits: 1,
-  }).format(value ?? 0);
-
-export const compactCurrency = (value: number): string =>
-  new Intl.NumberFormat('pt-BR', {
-    notation: 'compact',
-    style: 'currency',
-    currency: 'BRL',
-    maximumFractionDigits: 1,
-  }).format(value);
-
-export const compactNumber = (value: number): string =>
-  new Intl.NumberFormat('pt-BR', { notation: 'compact', maximumFractionDigits: 1 }).format(value);
-
-export function parseMatrix(rows: JsonRow[] | undefined, labelKey: string) {
-  const safeRows = Array.isArray(rows) ? rows : [];
-  const header = safeRows.find((row) => !isPresent(row[labelKey])) ?? safeRows[0];
-  if (!header) return { months: [] as Array<{ key: string; label: string }>, items: [] as JsonRow[] };
-
-  const months = Object.entries(header)
-    .filter(([key, label]) => key !== labelKey && typeof label === 'string' && /^(Jan|Fev|Mar|Abr|Mai|Jun|Jul|Ago|Set|Out|Nov|Dez)$/.test(label))
-    .map(([key, label]) => ({ key, label: String(label) }));
-
-  const items = safeRows.filter((row) => {
-    const label = row[labelKey];
-    return isPresent(label) && label !== 'Total' && !months.some((month) => label === month.label);
-  });
-
-  return { months, items };
-}
+export type Row=Record<string,string|number|null>;
+export const present=(v:unknown)=>v!==null&&v!==undefined&&v!=='';
+export const num=(v:unknown):number|null=>{if(!present(v))return null;if(typeof v==='number')return Number.isFinite(v)?v:null;const n=Number(String(v).trim().replace(/\s/g,'').replace(/\.(?=\d{3}(?:\D|$))/g,'').replace(',','.'));return Number.isFinite(n)?n:null};
+export const sum=(a:(number|null)[])=>a.reduce<number>((t,v)=>t+(v??0),0);
+export const money=(v:number|null|undefined)=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0}).format(v??0);
+export const integer=(v:number|null|undefined)=>new Intl.NumberFormat('pt-BR',{maximumFractionDigits:0}).format(v??0);
+export const percent=(v:number|null|undefined)=>new Intl.NumberFormat('pt-BR',{style:'percent',minimumFractionDigits:1,maximumFractionDigits:1}).format(v??0);
+export const abbr=(v:number|null|undefined)=>{const n=v??0,a=Math.abs(n),f=(x:number)=>new Intl.NumberFormat('pt-BR',{minimumFractionDigits:Number.isInteger(x)?0:1,maximumFractionDigits:1}).format(x);return a>=1e6?f(n/1e6)+'MM':a>=1e3?f(n/1e3)+'k':integer(n)};
+export function matrix(rows:Row[]|undefined,labelKey:string){const safe=Array.isArray(rows)?rows:[];const header=safe.find(r=>!present(r[labelKey]))??safe[0];if(!header)return{months:[] as {key:string,label:string}[],items:[] as Row[],data:[] as Record<string,string|number>[],series:[] as string[]};const months=Object.entries(header).filter(([k,v])=>k!==labelKey&&typeof v==='string'&&/^(Jan|Fev|Mar|Abr|Mai|Jun|Jul|Ago|Set|Out|Nov|Dez)$/.test(v)).map(([key,label])=>({key,label:String(label)}));const items=safe.filter(r=>present(r[labelKey])&&r[labelKey]!=='Total');const series=items.map(r=>String(r[labelKey]));const data=months.map(m=>{const p:Record<string,string|number>={mes:m.label};items.forEach(r=>p[String(r[labelKey])]=num(r[m.key])??0);return p}).filter(p=>series.some(s=>Number(p[s])!==0));return{months,items,data,series}}
