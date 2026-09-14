@@ -5,17 +5,36 @@ import KpiCard from "./KpiCard";
 import OrcadoRealizado from "./charts/OrcadoRealizado";
 import ParcelasPagas from "./charts/ParcelasPagas";
 import CrescimentoBase from "./charts/CrescimentoBase";
-import { formatBRLCompact } from "../lib/format";
+import { buildKpisFromRows } from "../lib/dataUtils";
 
+// Visões de topo = chaves de 1º nível do JSON real.
 const VIEWS = [
-  { key: "orcadoRealizado", label: "Orçado vs Realizado" },
-  { key: "parcelasPagas", label: "Parcelas Pagas" },
-  { key: "crescimentoBaseVsAdesoes", label: "Crescimento da Base vs Adesões" },
+  { key: "orcadoVsRealizado", label: "Orçado vs Realizado", Chart: OrcadoRealizado },
+  { key: "parcelasPagas", label: "Parcelas Pagas", Chart: ParcelasPagas },
+  { key: "crescimentoBaseVsAdesoes", label: "Crescimento da Base vs Adesões", Chart: CrescimentoBase },
 ];
+
+// Rótulos amigáveis para as sub-chaves (2º nível) de cada visão.
+const SUBVIEW_LABELS = {
+  baseline: "Baseline",
+  alavanca: "Alavanca",
+  consolidado: "Consolidado",
+  dados: "Dados",
+  adesaoPlano: "Adesão por Plano",
+  adesaoCanal: "Adesão por Canal",
+  crescimentoBase: "Crescimento da Base",
+};
+
+function subLabel(key) {
+  if (SUBVIEW_LABELS[key]) return SUBVIEW_LABELS[key];
+  const spaced = key.replace(/([a-z0-9])([A-Z])/g, "$1 $2").replace(/_/g, " ").trim();
+  return spaced.charAt(0).toUpperCase() + spaced.slice(1);
+}
 
 export default function Dashboard() {
   const [data, setData] = useState(null);
-  const [view, setView] = useState("orcadoRealizado");
+  const [view, setView] = useState(VIEWS[0].key);
+  const [subView, setSubView] = useState(null);
   const [exporting, setExporting] = useState(false);
   const captureRef = useRef(null);
 
@@ -32,16 +51,19 @@ export default function Dashboard() {
     };
   }, []);
 
-  const activeView = VIEWS.find((v) => v.key === view);
-  const activeData = data ? data[view] : null;
+  // Ao trocar a visão principal, seleciona a primeira sub-chave disponível.
+  useEffect(() => {
+    if (!data || !data[view]) return;
+    const subKeys = Object.keys(data[view]);
+    setSubView(subKeys[0] ?? null);
+  }, [data, view]);
 
-  const chart = useMemo(() => {
-    if (!activeData) return null;
-    if (view === "orcadoRealizado") return <OrcadoRealizado data={activeData.mensal} />;
-    if (view === "parcelasPagas") return <ParcelasPagas data={activeData.mensal} />;
-    if (view === "crescimentoBaseVsAdesoes") return <CrescimentoBase data={activeData.mensal} />;
-    return null;
-  }, [activeData, view]);
+  const activeViewMeta = VIEWS.find((v) => v.key === view);
+  const viewObject = data ? data[view] : null;
+  const subKeys = viewObject ? Object.keys(viewObject) : [];
+  const activeRows = viewObject && subView ? viewObject[subView] : [];
+
+  const kpis = useMemo(() => buildKpisFromRows(activeRows), [activeRows]);
 
   async function handleExportPNG() {
     if (!captureRef.current) return;
@@ -54,7 +76,7 @@ export default function Dashboard() {
         useCORS: true,
       });
       const link = document.createElement("a");
-      link.download = `dashboard-${view}-${Date.now()}.png`;
+      link.download = `dashboard-${view}-${subView ?? "view"}-${Date.now()}.png`;
       link.href = canvas.toDataURL("image/png");
       link.click();
     } catch (err) {
@@ -72,6 +94,8 @@ export default function Dashboard() {
     );
   }
 
+  const ChartComponent = activeViewMeta.Chart;
+
   return (
     <div className="min-h-screen bg-bg pb-16">
       {/* Barra superior */}
@@ -82,14 +106,12 @@ export default function Dashboard() {
               V
             </div>
             <div>
-              <p className="text-sm font-semibold text-navy-900">Voltz · {data.meta.time}</p>
-              <p className="text-xs text-muted">
-                Versão {data.meta.versao} · <span className="text-good">{data.meta.status}</span>
-              </p>
+              <p className="text-sm font-semibold text-navy-900">Dashboard Executivo · Voltz</p>
+              <p className="text-xs text-muted">Dados carregados de dashboard.json</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-end gap-3">
             <label className="flex flex-col gap-1">
               <span className="text-[11px] font-medium text-muted">Visão</span>
               <select
@@ -108,7 +130,7 @@ export default function Dashboard() {
             <button
               onClick={handleExportPNG}
               disabled={exporting}
-              className="mt-5 flex items-center gap-2 rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-white shadow-card transition hover:bg-navy-600 disabled:opacity-60"
+              className="flex items-center gap-2 rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-white shadow-card transition hover:bg-navy-600 disabled:opacity-60"
             >
               {exporting ? "Exportando…" : "⬇ Exportar PNG"}
             </button>
@@ -121,70 +143,58 @@ export default function Dashboard() {
           {/* Título da visão */}
           <div className="mb-6 flex flex-col gap-1">
             <p className="text-xs font-semibold uppercase tracking-wide text-navy-400">
-              {data.meta.time} · {data.meta.periodo}
+              Q3 2026
             </p>
             <h1 className="text-3xl font-extrabold tracking-tight text-navy-900">
-              {activeView.label}
+              {activeViewMeta.label}
             </h1>
           </div>
 
-          {/* Cards de contexto (meta / objetivo / período) */}
-          <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
-            <ContextCard
-              icon="🎯"
-              title="Meta financeira"
-              value={formatBRLCompact(data.meta.metaFinanceira)}
-              subtitle="Alcançar lucro bruto"
-            />
-            <ContextCard
-              icon="🚩"
-              title="Objetivo estratégico"
-              value={data.meta.objetivoEstrategico}
-              subtitle=""
-              small
-            />
-            <ContextCard
-              icon="📅"
-              title="Período"
-              value={data.meta.periodo}
-              subtitle={data.meta.trimestre}
-            />
-          </div>
+          {/* Sub-visões (2º nível do JSON), quando houver mais de uma */}
+          {subKeys.length > 1 && (
+            <div className="mb-6 flex flex-wrap gap-2">
+              {subKeys.map((key) => (
+                <button
+                  key={key}
+                  onClick={() => setSubView(key)}
+                  className={`rounded-full border px-4 py-1.5 text-sm font-semibold transition ${
+                    subView === key
+                      ? "border-navy bg-navy text-white shadow-card"
+                      : "border-line bg-panel text-navy-900 hover:border-navy-300"
+                  }`}
+                >
+                  {subLabel(key)}
+                </button>
+              ))}
+            </div>
+          )}
 
-          {/* KPIs */}
-          <div className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {activeData.kpis.map((kpi) => (
-              <KpiCard key={kpi.label} {...kpi} />
-            ))}
-          </div>
+          {/* KPIs — calculados dinamicamente a partir das linhas reais */}
+          {kpis.length > 0 && (
+            <div className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {kpis.map((kpi) => (
+                <KpiCard key={kpi.label} {...kpi} />
+              ))}
+            </div>
+          )}
 
           {/* Gráfico principal */}
           <div className="rounded-2xl border border-line bg-panel p-6 shadow-card">
             <div className="mb-4 flex items-center justify-between">
-              <h2 className="text-base font-bold text-navy-900">{activeView.label} · mensal</h2>
-              <span className="text-xs font-medium text-muted">Jul – Set 2026</span>
+              <h2 className="text-base font-bold text-navy-900">
+                {activeViewMeta.label}
+                {subKeys.length > 1 && subView ? ` · ${subLabel(subView)}` : ""}
+              </h2>
+              <span className="text-xs font-medium text-muted">
+                {activeRows.length} registro{activeRows.length === 1 ? "" : "s"}
+              </span>
             </div>
-            <div className="h-[380px]">{chart}</div>
+            <div className="h-[380px]">
+              <ChartComponent rows={activeRows} />
+            </div>
           </div>
         </div>
       </main>
-    </div>
-  );
-}
-
-function ContextCard({ icon, title, value, subtitle, small }) {
-  return (
-    <div className="flex items-start gap-4 rounded-xl border border-line bg-panel p-5 shadow-card">
-      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-navy text-lg text-white">
-        {icon}
-      </div>
-      <div>
-        <p className="text-xs font-semibold uppercase tracking-wide text-muted">{title}</p>
-        <p className={`mt-1 font-bold text-navy-900 ${small ? "text-sm leading-snug" : "text-xl"}`}>
-          {value}
-        </p>
-        {subtitle && <p className="mt-0.5 text-xs text-muted">{subtitle}</p>}
-      </div>
     </div>
   );
 }
