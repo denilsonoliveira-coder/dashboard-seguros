@@ -1,653 +1,653 @@
-"{
-  ""orcadoVsRealizado"": {
-    ""baseline"": [
+{
+  "orcadoVsRealizado": {
+    "baseline": [
       {
-        ""Baseline (2,99 e 5,99)"": ""Mês"",
-        ""Coluna1"": ""Planejado"",
-        ""Coluna2"": ""Realizado"",
-        ""Coluna3"": ""Atg.""
+        "Baseline (2,99 e 5,99)": "Mês",
+        "Coluna1": "Planejado",
+        "Coluna2": "Realizado",
+        "Coluna3": "Atg."
       },
       {
-        ""Baseline (2,99 e 5,99)"": 46023,
-        ""Coluna1"": 642905.16,
-        ""Coluna2"": 788438.2,
-        ""Coluna3"": 1.2263678207218
+        "Baseline (2,99 e 5,99)": 46023,
+        "Coluna1": 642905.16,
+        "Coluna2": 788438.2,
+        "Coluna3": 1.2263678207218
       },
       {
-        ""Baseline (2,99 e 5,99)"": 46054,
-        ""Coluna1"": 663457.36,
-        ""Coluna2"": 807341.93,
-        ""Coluna3"": 1.216870862658
+        "Baseline (2,99 e 5,99)": 46054,
+        "Coluna1": 663457.36,
+        "Coluna2": 807341.93,
+        "Coluna3": 1.216870862658
       },
       {
-        ""Baseline (2,99 e 5,99)"": 46082,
-        ""Coluna1"": 684087.3,
-        ""Coluna2"": 908526.64,
-        ""Coluna3"": 1.32808581594776
+        "Baseline (2,99 e 5,99)": 46082,
+        "Coluna1": 684087.3,
+        "Coluna2": 908526.64,
+        "Coluna3": 1.32808581594776
       },
       {
-        ""Baseline (2,99 e 5,99)"": 46113,
-        ""Coluna1"": 704793.4252,
-        ""Coluna2"": 883108.83,
-        ""Coluna3"": 1.25300378582476
+        "Baseline (2,99 e 5,99)": 46113,
+        "Coluna1": 704793.4252,
+        "Coluna2": 883108.83,
+        "Coluna3": 1.25300378582476
       },
       {
-        ""Baseline (2,99 e 5,99)"": 46143,
-        ""Coluna1"": 733551.382105372,
-        ""Coluna2"": 942401.89,
-        ""Coluna3"": 1.28471149123215
+        "Baseline (2,99 e 5,99)": 46143,
+        "Coluna1": 733551.382105372,
+        "Coluna2": 942401.89,
+        "Coluna3": 1.28471149123215
       },
       {
-        ""Baseline (2,99 e 5,99)"": 46174,
-        ""Coluna1"": 754245.793663265,
-        ""Coluna2"": 961473.32,
-        ""Coluna3"": 1.27474800400313
+        "Baseline (2,99 e 5,99)": 46174,
+        "Coluna1": 754245.793663265,
+        "Coluna2": 961473.32,
+        "Coluna3": 1.27474800400313
       },
       {
-        ""Baseline (2,99 e 5,99)"": 46204,
-        ""Coluna1"": 775015.100989999,
-        ""Coluna2"": 1034687.15,
-        ""Coluna3"": 1.33505417981959
+        "Baseline (2,99 e 5,99)": 46204,
+        "Coluna1": 775015.100989999,
+        "Coluna2": 1034687.15,
+        "Coluna3": 1.33505417981959
       },
       {
-        ""Baseline (2,99 e 5,99)"": 46235,
-        ""Coluna1"": 795857.806170199,
-        ""Coluna2"": 1065507.94,
-        ""Coluna3"": 1.33881697426253
+        "Baseline (2,99 e 5,99)": 46235,
+        "Coluna1": 795857.806170199,
+        "Coluna2": 1065507.94,
+        "Coluna3": 1.33881697426253
       },
       {
-        ""Baseline (2,99 e 5,99)"": 46266,
-        ""Coluna1"": 816772.441246795,
-        ""Coluna2"": """",
-        ""Coluna3"": """"
+        "Baseline (2,99 e 5,99)": 46266,
+        "Coluna1": 816772.441246795,
+        "Coluna2": "",
+        "Coluna3": ""
       },
       {
-        ""Baseline (2,99 e 5,99)"": 46296,
-        ""Coluna1"": 837757.567621859,
-        ""Coluna2"": """",
-        ""Coluna3"": """"
+        "Baseline (2,99 e 5,99)": 46296,
+        "Coluna1": 837757.567621859,
+        "Coluna2": "",
+        "Coluna3": ""
       },
       {
-        ""Baseline (2,99 e 5,99)"": 46327,
-        ""Coluna1"": 858811.775469422,
-        ""Coluna2"": """",
-        ""Coluna3"": """"
+        "Baseline (2,99 e 5,99)": 46327,
+        "Coluna1": 858811.775469422,
+        "Coluna2": "",
+        "Coluna3": ""
       },
       {
-        ""Baseline (2,99 e 5,99)"": 46357,
-        ""Coluna1"": 879933.683160034,
-        ""Coluna2"": """",
-        ""Coluna3"": """"
+        "Baseline (2,99 e 5,99)": 46357,
+        "Coluna1": 879933.683160034,
+        "Coluna2": "",
+        "Coluna3": ""
       }
     ],
-    ""alavanca"": [
+    "alavanca": [
       {
-        ""Alavanca (9,99 e 15,99)"": ""Mês"",
-        ""Coluna1"": ""Planejado"",
-        ""Coluna2"": ""Realizado"",
-        ""Coluna3"": ""Atg.""
+        "Alavanca (9,99 e 15,99)": "Mês",
+        "Coluna1": "Planejado",
+        "Coluna2": "Realizado",
+        "Coluna3": "Atg."
       },
       {
-        ""Alavanca (9,99 e 15,99)"": 46023,
-        ""Coluna1"": 15588,
-        ""Coluna2"": 19713.81,
-        ""Coluna3"": 1.26467859892225
+        "Alavanca (9,99 e 15,99)": 46023,
+        "Coluna1": 15588,
+        "Coluna2": 19713.81,
+        "Coluna3": 1.26467859892225
       },
       {
-        ""Alavanca (9,99 e 15,99)"": 46054,
-        ""Coluna1"": 109829,
-        ""Coluna2"": 69079.89,
-        ""Coluna3"": 0.628976772983456
+        "Alavanca (9,99 e 15,99)": 46054,
+        "Coluna1": 109829,
+        "Coluna2": 69079.89,
+        "Coluna3": 0.628976772983456
       },
       {
-        ""Alavanca (9,99 e 15,99)"": 46082,
-        ""Coluna1"": 204070,
-        ""Coluna2"": 155928.06,
-        ""Coluna3"": 0.76409104718969
+        "Alavanca (9,99 e 15,99)": 46082,
+        "Coluna1": 204070,
+        "Coluna2": 155928.06,
+        "Coluna3": 0.76409104718969
       },
       {
-        ""Alavanca (9,99 e 15,99)"": 46113,
-        ""Coluna1"": 298310,
-        ""Coluna2"": 243263.37,
-        ""Coluna3"": 0.815471724045456
+        "Alavanca (9,99 e 15,99)": 46113,
+        "Coluna1": 298310,
+        "Coluna2": 243263.37,
+        "Coluna3": 0.815471724045456
       },
       {
-        ""Alavanca (9,99 e 15,99)"": 46143,
-        ""Coluna1"": 392551,
-        ""Coluna2"": 346966.17,
-        ""Coluna3"": 0.883875394534723
+        "Alavanca (9,99 e 15,99)": 46143,
+        "Coluna1": 392551,
+        "Coluna2": 346966.17,
+        "Coluna3": 0.883875394534723
       },
       {
-        ""Alavanca (9,99 e 15,99)"": 46174,
-        ""Coluna1"": 486792,
-        ""Coluna2"": 461683.17,
-        ""Coluna3"": 0.948419797367253
+        "Alavanca (9,99 e 15,99)": 46174,
+        "Coluna1": 486792,
+        "Coluna2": 461683.17,
+        "Coluna3": 0.948419797367253
       },
       {
-        ""Alavanca (9,99 e 15,99)"": 46204,
-        ""Coluna1"": 581033,
-        ""Coluna2"": 629321.82,
-        ""Coluna3"": 1.08310856698329
+        "Alavanca (9,99 e 15,99)": 46204,
+        "Coluna1": 581033,
+        "Coluna2": 629321.82,
+        "Coluna3": 1.08310856698329
       },
       {
-        ""Alavanca (9,99 e 15,99)"": 46235,
-        ""Coluna1"": 675274,
-        ""Coluna2"": 783539.79,
-        ""Coluna3"": 1.16032868139452
+        "Alavanca (9,99 e 15,99)": 46235,
+        "Coluna1": 675274,
+        "Coluna2": 783539.79,
+        "Coluna3": 1.16032868139452
       },
       {
-        ""Alavanca (9,99 e 15,99)"": 46266,
-        ""Coluna1"": 769514,
-        ""Coluna2"": """",
-        ""Coluna3"": """"
+        "Alavanca (9,99 e 15,99)": 46266,
+        "Coluna1": 769514,
+        "Coluna2": "",
+        "Coluna3": ""
       },
       {
-        ""Alavanca (9,99 e 15,99)"": 46296,
-        ""Coluna1"": 863755,
-        ""Coluna2"": """",
-        ""Coluna3"": """"
+        "Alavanca (9,99 e 15,99)": 46296,
+        "Coluna1": 863755,
+        "Coluna2": "",
+        "Coluna3": ""
       },
       {
-        ""Alavanca (9,99 e 15,99)"": 46327,
-        ""Coluna1"": 957996,
-        ""Coluna2"": """",
-        ""Coluna3"": """"
+        "Alavanca (9,99 e 15,99)": 46327,
+        "Coluna1": 957996,
+        "Coluna2": "",
+        "Coluna3": ""
       },
       {
-        ""Alavanca (9,99 e 15,99)"": 46357,
-        ""Coluna1"": 1052237,
-        ""Coluna2"": """",
-        ""Coluna3"": """"
+        "Alavanca (9,99 e 15,99)": 46357,
+        "Coluna1": 1052237,
+        "Coluna2": "",
+        "Coluna3": ""
       }
     ],
-    ""consolidado"": [
+    "consolidado": [
       {
-        ""Conslidado"": ""Mês"",
-        ""Coluna1"": ""Planejado"",
-        ""Coluna2"": ""Realizado"",
-        ""Coluna3"": ""Atg.""
+        "Conslidado": "Mês",
+        "Coluna1": "Planejado",
+        "Coluna2": "Realizado",
+        "Coluna3": "Atg."
       },
       {
-        ""Conslidado"": 46023,
-        ""Coluna1"": 658493.16,
-        ""Coluna2"": 808152.01,
-        ""Coluna3"": 1.22727472218542
+        "Conslidado": 46023,
+        "Coluna1": 658493.16,
+        "Coluna2": 808152.01,
+        "Coluna3": 1.22727472218542
       },
       {
-        ""Conslidado"": 46054,
-        ""Coluna1"": 773286.36,
-        ""Coluna2"": 876421.82,
-        ""Coluna3"": 1.13337292022065
+        "Conslidado": 46054,
+        "Coluna1": 773286.36,
+        "Coluna2": 876421.82,
+        "Coluna3": 1.13337292022065
       },
       {
-        ""Conslidado"": 46082,
-        ""Coluna1"": 888157.3,
-        ""Coluna2"": 1064454.7,
-        ""Coluna3"": 1.19849794625344
+        "Conslidado": 46082,
+        "Coluna1": 888157.3,
+        "Coluna2": 1064454.7,
+        "Coluna3": 1.19849794625344
       },
       {
-        ""Conslidado"": 46113,
-        ""Coluna1"": 1003103.4252,
-        ""Coluna2"": 1126372.2,
-        ""Coluna3"": 1.12288740293696
+        "Conslidado": 46113,
+        "Coluna1": 1003103.4252,
+        "Coluna2": 1126372.2,
+        "Coluna3": 1.12288740293696
       },
       {
-        ""Conslidado"": 46143,
-        ""Coluna1"": 1126102.38210537,
-        ""Coluna2"": 1289368.06,
-        ""Coluna3"": 1.14498297889166
+        "Conslidado": 46143,
+        "Coluna1": 1126102.38210537,
+        "Coluna2": 1289368.06,
+        "Coluna3": 1.14498297889166
       },
       {
-        ""Conslidado"": 46174,
-        ""Coluna1"": 1241037.79366326,
-        ""Coluna2"": 1423156.49,
-        ""Coluna3"": 1.14674709929595
+        "Conslidado": 46174,
+        "Coluna1": 1241037.79366326,
+        "Coluna2": 1423156.49,
+        "Coluna3": 1.14674709929595
       },
       {
-        ""Conslidado"": 46204,
-        ""Coluna1"": 1356048.10099,
-        ""Coluna2"": 1664008.97,
-        ""Coluna3"": 1.22710172949261
+        "Conslidado": 46204,
+        "Coluna1": 1356048.10099,
+        "Coluna2": 1664008.97,
+        "Coluna3": 1.22710172949261
       },
       {
-        ""Conslidado"": 46235,
-        ""Coluna1"": 1471131.8061702,
-        ""Coluna2"": 1849047.73,
-        ""Coluna3"": 1.25688787520245
+        "Conslidado": 46235,
+        "Coluna1": 1471131.8061702,
+        "Coluna2": 1849047.73,
+        "Coluna3": 1.25688787520245
       },
       {
-        ""Conslidado"": 46266,
-        ""Coluna1"": 1586286.4412468,
-        ""Coluna2"": """",
-        ""Coluna3"": """"
+        "Conslidado": 46266,
+        "Coluna1": 1586286.4412468,
+        "Coluna2": "",
+        "Coluna3": ""
       },
       {
-        ""Conslidado"": 46296,
-        ""Coluna1"": 1701512.56762186,
-        ""Coluna2"": """",
-        ""Coluna3"": """"
+        "Conslidado": 46296,
+        "Coluna1": 1701512.56762186,
+        "Coluna2": "",
+        "Coluna3": ""
       },
       {
-        ""Conslidado"": 46327,
-        ""Coluna1"": 1816807.77546942,
-        ""Coluna2"": """",
-        ""Coluna3"": """"
+        "Conslidado": 46327,
+        "Coluna1": 1816807.77546942,
+        "Coluna2": "",
+        "Coluna3": ""
       },
       {
-        ""Conslidado"": 46357,
-        ""Coluna1"": 1932170.68316003,
-        ""Coluna2"": """",
-        ""Coluna3"": """"
+        "Conslidado": 46357,
+        "Coluna1": 1932170.68316003,
+        "Coluna2": "",
+        "Coluna3": ""
       }
     ]
   },
-  ""parcelasPagas"": {
-    ""dados"": [
+  "parcelasPagas": {
+    "dados": [
       {
-        ""Share de Planos"": """",
-        ""Coluna1"": ""Jan"",
-        ""Coluna2"": ""Fev"",
-        ""Coluna3"": ""Mar"",
-        ""Coluna4"": ""Abr"",
-        ""Coluna5"": ""Mai"",
-        ""Coluna6"": ""Jun"",
-        ""Coluna7"": ""Jul"",
-        ""Coluna8"": ""Ago"",
-        ""Coluna9"": ""Set"",
-        ""Coluna10"": ""Out"",
-        ""Coluna11"": ""Nov"",
-        ""Coluna12"": ""Dez"",
-        ""Coluna13"": ""Total"",
-        ""Coluna14"": ""%share""
+        "Share de Planos": "",
+        "Coluna1": "Jan",
+        "Coluna2": "Fev",
+        "Coluna3": "Mar",
+        "Coluna4": "Abr",
+        "Coluna5": "Mai",
+        "Coluna6": "Jun",
+        "Coluna7": "Jul",
+        "Coluna8": "Ago",
+        "Coluna9": "Set",
+        "Coluna10": "Out",
+        "Coluna11": "Nov",
+        "Coluna12": "Dez",
+        "Coluna13": "Total",
+        "Coluna14": "%share"
       },
       {
-        ""Share de Planos"": ""Start (2,99)"",
-        ""Coluna1"": 176439.9,
-        ""Coluna2"": 166118.42,
-        ""Coluna3"": 177680.75,
-        ""Coluna4"": 162898.19,
-        ""Coluna5"": 165831.38,
-        ""Coluna6"": 157330.81,
-        ""Coluna7"": 156702.91,
-        ""Coluna8"": 151787.35,
-        ""Coluna9"": """",
-        ""Coluna10"": """",
-        ""Coluna11"": """",
-        ""Coluna12"": """",
-        ""Coluna13"": 1314789.71,
-        ""Coluna14"": 0.130168261605507
+        "Share de Planos": "Start (2,99)",
+        "Coluna1": 176439.9,
+        "Coluna2": 166118.42,
+        "Coluna3": 177680.75,
+        "Coluna4": 162898.19,
+        "Coluna5": 165831.38,
+        "Coluna6": 157330.81,
+        "Coluna7": 156702.91,
+        "Coluna8": 151787.35,
+        "Coluna9": "",
+        "Coluna10": "",
+        "Coluna11": "",
+        "Coluna12": "",
+        "Coluna13": 1314789.71,
+        "Coluna14": 0.130168261605507
       },
       {
-        ""Share de Planos"": ""Básico (5,99)"",
-        ""Coluna1"": 611998.3,
-        ""Coluna2"": 641223.51,
-        ""Coluna3"": 730845.89,
-        ""Coluna4"": 720201.66,
-        ""Coluna5"": 776519.64,
-        ""Coluna6"": 804049.68,
-        ""Coluna7"": 877930.34,
-        ""Coluna8"": 913720.59,
-        ""Coluna9"": """",
-        ""Coluna10"": """",
-        ""Coluna11"": """",
-        ""Coluna12"": """",
-        ""Coluna13"": 6076489.61,
-        ""Coluna14"": 0.601591329154552
+        "Share de Planos": "Básico (5,99)",
+        "Coluna1": 611998.3,
+        "Coluna2": 641223.51,
+        "Coluna3": 730845.89,
+        "Coluna4": 720201.66,
+        "Coluna5": 776519.64,
+        "Coluna6": 804049.68,
+        "Coluna7": 877930.34,
+        "Coluna8": 913720.59,
+        "Coluna9": "",
+        "Coluna10": "",
+        "Coluna11": "",
+        "Coluna12": "",
+        "Coluna13": 6076489.61,
+        "Coluna14": 0.601591329154552
       },
       {
-        ""Share de Planos"": ""Essencial (9,99)"",
-        ""Coluna1"": 10279.71,
-        ""Coluna2"": 34365.6,
-        ""Coluna3"": 75674.25,
-        ""Coluna4"": 118461.42,
-        ""Coluna5"": 172627.2,
-        ""Coluna6"": 234505.26,
-        ""Coluna7"": 331737.93,
-        ""Coluna8"": 431807.76,
-        ""Coluna9"": """",
-        ""Coluna10"": """",
-        ""Coluna11"": """",
-        ""Coluna12"": """",
-        ""Coluna13"": 1409459.13,
-        ""Coluna14"": 0.139540827982378
+        "Share de Planos": "Essencial (9,99)",
+        "Coluna1": 10279.71,
+        "Coluna2": 34365.6,
+        "Coluna3": 75674.25,
+        "Coluna4": 118461.42,
+        "Coluna5": 172627.2,
+        "Coluna6": 234505.26,
+        "Coluna7": 331737.93,
+        "Coluna8": 431807.76,
+        "Coluna9": "",
+        "Coluna10": "",
+        "Coluna11": "",
+        "Coluna12": "",
+        "Coluna13": 1409459.13,
+        "Coluna14": 0.139540827982378
       },
       {
-        ""Share de Planos"": ""Plus (15,99)"",
-        ""Coluna1"": 9434.1,
-        ""Coluna2"": 34714.29,
-        ""Coluna3"": 80253.81,
-        ""Coluna4"": 124801.95,
-        ""Coluna5"": 174338.97,
-        ""Coluna6"": 227121.96,
-        ""Coluna7"": 297557.91,
-        ""Coluna8"": 351732.03,
-        ""Coluna9"": """",
-        ""Coluna10"": """",
-        ""Coluna11"": """",
-        ""Coluna12"": """",
-        ""Coluna13"": 1299955.02,
-        ""Coluna14"": 0.128699581257563
+        "Share de Planos": "Plus (15,99)",
+        "Coluna1": 9434.1,
+        "Coluna2": 34714.29,
+        "Coluna3": 80253.81,
+        "Coluna4": 124801.95,
+        "Coluna5": 174338.97,
+        "Coluna6": 227121.96,
+        "Coluna7": 297557.91,
+        "Coluna8": 351732.03,
+        "Coluna9": "",
+        "Coluna10": "",
+        "Coluna11": "",
+        "Coluna12": "",
+        "Coluna13": 1299955.02,
+        "Coluna14": 0.128699581257563
       },
       {
-        ""Share de Planos"": ""Total"",
-        ""Coluna1"": 808152.01,
-        ""Coluna2"": 876421.82,
-        ""Coluna3"": 1064454.7,
-        ""Coluna4"": 1126363.22,
-        ""Coluna5"": 1289317.19,
-        ""Coluna6"": 1423007.71,
-        ""Coluna7"": 1663929.09,
-        ""Coluna8"": 1849047.73,
-        ""Coluna9"": 0,
-        ""Coluna10"": 0,
-        ""Coluna11"": 0,
-        ""Coluna12"": 0,
-        ""Coluna13"": 10100693.47,
-        ""Coluna14"": 1
+        "Share de Planos": "Total",
+        "Coluna1": 808152.01,
+        "Coluna2": 876421.82,
+        "Coluna3": 1064454.7,
+        "Coluna4": 1126363.22,
+        "Coluna5": 1289317.19,
+        "Coluna6": 1423007.71,
+        "Coluna7": 1663929.09,
+        "Coluna8": 1849047.73,
+        "Coluna9": 0,
+        "Coluna10": 0,
+        "Coluna11": 0,
+        "Coluna12": 0,
+        "Coluna13": 10100693.47,
+        "Coluna14": 1
       }
     ]
   },
-  ""crescimentoBaseVsAdesoes"": {
-    ""adesaoPlano"": [
+  "crescimentoBaseVsAdesoes": {
+    "adesaoPlano": [
       {
-        ""Share de Planos"": """",
-        ""Coluna1"": ""Jan"",
-        ""Coluna2"": ""Fev"",
-        ""Coluna3"": ""Mar"",
-        ""Coluna4"": ""Abr"",
-        ""Coluna5"": ""Mai"",
-        ""Coluna6"": ""Jun"",
-        ""Coluna7"": ""Jul"",
-        ""Coluna8"": ""Ago"",
-        ""Coluna9"": ""Set"",
-        ""Coluna10"": ""Out"",
-        ""Coluna11"": ""Nov"",
-        ""Coluna12"": ""Dez"",
-        ""Coluna13"": ""Total"",
-        ""Coluna14"": ""%Share""
+        "Share de Planos": "",
+        "Coluna1": "Jan",
+        "Coluna2": "Fev",
+        "Coluna3": "Mar",
+        "Coluna4": "Abr",
+        "Coluna5": "Mai",
+        "Coluna6": "Jun",
+        "Coluna7": "Jul",
+        "Coluna8": "Ago",
+        "Coluna9": "Set",
+        "Coluna10": "Out",
+        "Coluna11": "Nov",
+        "Coluna12": "Dez",
+        "Coluna13": "Total",
+        "Coluna14": "%Share"
       },
       {
-        ""Share de Planos"": ""Básico (5,99)"",
-        ""Coluna1"": 5917,
-        ""Coluna2"": 5924,
-        ""Coluna3"": 7362,
-        ""Coluna4"": 8714,
-        ""Coluna5"": 12673,
-        ""Coluna6"": 13385,
-        ""Coluna7"": 13497,
-        ""Coluna8"": 11463,
-        ""Coluna9"": """",
-        ""Coluna10"": """",
-        ""Coluna11"": """",
-        ""Coluna12"": """",
-        ""Coluna13"": 78935,
-        ""Coluna14"": 0.47586177793318
+        "Share de Planos": "Básico (5,99)",
+        "Coluna1": 5917,
+        "Coluna2": 5924,
+        "Coluna3": 7362,
+        "Coluna4": 8714,
+        "Coluna5": 12673,
+        "Coluna6": 13385,
+        "Coluna7": 13497,
+        "Coluna8": 11463,
+        "Coluna9": "",
+        "Coluna10": "",
+        "Coluna11": "",
+        "Coluna12": "",
+        "Coluna13": 78935,
+        "Coluna14": 0.47586177793318
       },
       {
-        ""Share de Planos"": ""Essencial (9,99)"",
-        ""Coluna1"": 3708,
-        ""Coluna2"": 4154,
-        ""Coluna3"": 5298,
-        ""Coluna4"": 5879,
-        ""Coluna5"": 9031,
-        ""Coluna6"": 10615,
-        ""Coluna7"": 10989,
-        ""Coluna8"": 9283,
-        ""Coluna9"": """",
-        ""Coluna10"": """",
-        ""Coluna11"": """",
-        ""Coluna12"": """",
-        ""Coluna13"": 58957,
-        ""Coluna14"": 0.355423865732647
+        "Share de Planos": "Essencial (9,99)",
+        "Coluna1": 3708,
+        "Coluna2": 4154,
+        "Coluna3": 5298,
+        "Coluna4": 5879,
+        "Coluna5": 9031,
+        "Coluna6": 10615,
+        "Coluna7": 10989,
+        "Coluna8": 9283,
+        "Coluna9": "",
+        "Coluna10": "",
+        "Coluna11": "",
+        "Coluna12": "",
+        "Coluna13": 58957,
+        "Coluna14": 0.355423865732647
       },
       {
-        ""Share de Planos"": ""Plus (15,99)"",
-        ""Coluna1"": 2320,
-        ""Coluna2"": 2841,
-        ""Coluna3"": 3510,
-        ""Coluna4"": 3029,
-        ""Coluna5"": 4519,
-        ""Coluna6"": 4376,
-        ""Coluna7"": 4013,
-        ""Coluna8"": 3378,
-        ""Coluna9"": """",
-        ""Coluna10"": """",
-        ""Coluna11"": """",
-        ""Coluna12"": """",
-        ""Coluna13"": 27986,
-        ""Coluna14"": 0.168714356334173
+        "Share de Planos": "Plus (15,99)",
+        "Coluna1": 2320,
+        "Coluna2": 2841,
+        "Coluna3": 3510,
+        "Coluna4": 3029,
+        "Coluna5": 4519,
+        "Coluna6": 4376,
+        "Coluna7": 4013,
+        "Coluna8": 3378,
+        "Coluna9": "",
+        "Coluna10": "",
+        "Coluna11": "",
+        "Coluna12": "",
+        "Coluna13": 27986,
+        "Coluna14": 0.168714356334173
       },
       {
-        ""Share de Planos"": ""Total"",
-        ""Coluna1"": 11945,
-        ""Coluna2"": 12919,
-        ""Coluna3"": 16170,
-        ""Coluna4"": 17622,
-        ""Coluna5"": 26223,
-        ""Coluna6"": 28376,
-        ""Coluna7"": 28499,
-        ""Coluna8"": 24124,
-        ""Coluna9"": 0,
-        ""Coluna10"": 0,
-        ""Coluna11"": 0,
-        ""Coluna12"": 0,
-        ""Coluna13"": 165878,
-        ""Coluna14"": 1
+        "Share de Planos": "Total",
+        "Coluna1": 11945,
+        "Coluna2": 12919,
+        "Coluna3": 16170,
+        "Coluna4": 17622,
+        "Coluna5": 26223,
+        "Coluna6": 28376,
+        "Coluna7": 28499,
+        "Coluna8": 24124,
+        "Coluna9": 0,
+        "Coluna10": 0,
+        "Coluna11": 0,
+        "Coluna12": 0,
+        "Coluna13": 165878,
+        "Coluna14": 1
       }
     ],
-    ""adesaoCanal"": [
+    "adesaoCanal": [
       {
-        ""Share de Canais"": """",
-        ""Coluna1"": ""Jan"",
-        ""Coluna2"": ""Fev"",
-        ""Coluna3"": ""Mar"",
-        ""Coluna4"": ""Abr"",
-        ""Coluna5"": ""Mai"",
-        ""Coluna6"": ""Jun"",
-        ""Coluna7"": ""Jul"",
-        ""Coluna8"": ""Ago"",
-        ""Coluna9"": ""Set"",
-        ""Coluna10"": ""Out"",
-        ""Coluna11"": ""Nov"",
-        ""Coluna12"": ""Dez"",
-        ""Coluna13"": ""Total"",
-        ""Coluna14"": ""%Share""
+        "Share de Canais": "",
+        "Coluna1": "Jan",
+        "Coluna2": "Fev",
+        "Coluna3": "Mar",
+        "Coluna4": "Abr",
+        "Coluna5": "Mai",
+        "Coluna6": "Jun",
+        "Coluna7": "Jul",
+        "Coluna8": "Ago",
+        "Coluna9": "Set",
+        "Coluna10": "Out",
+        "Coluna11": "Nov",
+        "Coluna12": "Dez",
+        "Coluna13": "Total",
+        "Coluna14": "%Share"
       },
       {
-        ""Share de Canais"": ""EON"",
-        ""Coluna1"": 9848,
-        ""Coluna2"": 11110,
-        ""Coluna3"": 14377,
-        ""Coluna4"": 15677,
-        ""Coluna5"": 24293,
-        ""Coluna6"": 26335,
-        ""Coluna7"": 26707,
-        ""Coluna8"": 22499,
-        ""Coluna9"": 0,
-        ""Coluna10"": 0,
-        ""Coluna11"": 0,
-        ""Coluna12"": 0,
-        ""Coluna13"": 150846,
-        ""Coluna14"": 0.909379182290599
+        "Share de Canais": "EON",
+        "Coluna1": 9848,
+        "Coluna2": 11110,
+        "Coluna3": 14377,
+        "Coluna4": 15677,
+        "Coluna5": 24293,
+        "Coluna6": 26335,
+        "Coluna7": 26707,
+        "Coluna8": 22499,
+        "Coluna9": 0,
+        "Coluna10": 0,
+        "Coluna11": 0,
+        "Coluna12": 0,
+        "Coluna13": 150846,
+        "Coluna14": 0.909379182290599
       },
       {
-        ""Share de Canais"": ""AD"",
-        ""Coluna1"": 1244,
-        ""Coluna2"": 1078,
-        ""Coluna3"": 912,
-        ""Coluna4"": 1049,
-        ""Coluna5"": 1067,
-        ""Coluna6"": 1098,
-        ""Coluna7"": 1051,
-        ""Coluna8"": 1004,
-        ""Coluna9"": 0,
-        ""Coluna10"": 0,
-        ""Coluna11"": 0,
-        ""Coluna12"": 0,
-        ""Coluna13"": 8503,
-        ""Coluna14"": 0.0512605649935495
+        "Share de Canais": "AD",
+        "Coluna1": 1244,
+        "Coluna2": 1078,
+        "Coluna3": 912,
+        "Coluna4": 1049,
+        "Coluna5": 1067,
+        "Coluna6": 1098,
+        "Coluna7": 1051,
+        "Coluna8": 1004,
+        "Coluna9": 0,
+        "Coluna10": 0,
+        "Coluna11": 0,
+        "Coluna12": 0,
+        "Coluna13": 8503,
+        "Coluna14": 0.0512605649935495
       },
       {
-        ""Share de Canais"": ""GISA"",
-        ""Coluna1"": 853,
-        ""Coluna2"": 731,
-        ""Coluna3"": 881,
-        ""Coluna4"": 896,
-        ""Coluna5"": 860,
-        ""Coluna6"": 884,
-        ""Coluna7"": 659,
-        ""Coluna8"": 551,
-        ""Coluna9"": 0,
-        ""Coluna10"": 0,
-        ""Coluna11"": 0,
-        ""Coluna12"": 0,
-        ""Coluna13"": 6315,
-        ""Coluna14"": 0.0380701479400523
+        "Share de Canais": "GISA",
+        "Coluna1": 853,
+        "Coluna2": 731,
+        "Coluna3": 881,
+        "Coluna4": 896,
+        "Coluna5": 860,
+        "Coluna6": 884,
+        "Coluna7": 659,
+        "Coluna8": 551,
+        "Coluna9": 0,
+        "Coluna10": 0,
+        "Coluna11": 0,
+        "Coluna12": 0,
+        "Coluna13": 6315,
+        "Coluna14": 0.0380701479400523
       },
       {
-        ""Share de Canais"": ""Totem"",
-        ""Coluna1"": 0,
-        ""Coluna2"": 0,
-        ""Coluna3"": 0,
-        ""Coluna4"": 0,
-        ""Coluna5"": 3,
-        ""Coluna6"": 59,
-        ""Coluna7"": 82,
-        ""Coluna8"": 70,
-        ""Coluna9"": 0,
-        ""Coluna10"": 0,
-        ""Coluna11"": 0,
-        ""Coluna12"": 0,
-        ""Coluna13"": 214,
-        ""Coluna14"": 0.00129010477579908
+        "Share de Canais": "Totem",
+        "Coluna1": 0,
+        "Coluna2": 0,
+        "Coluna3": 0,
+        "Coluna4": 0,
+        "Coluna5": 3,
+        "Coluna6": 59,
+        "Coluna7": 82,
+        "Coluna8": 70,
+        "Coluna9": 0,
+        "Coluna10": 0,
+        "Coluna11": 0,
+        "Coluna12": 0,
+        "Coluna13": 214,
+        "Coluna14": 0.00129010477579908
       },
       {
-        ""Share de Canais"": ""Total"",
-        ""Coluna1"": 11945,
-        ""Coluna2"": 12919,
-        ""Coluna3"": 16170,
-        ""Coluna4"": 17622,
-        ""Coluna5"": 26223,
-        ""Coluna6"": 28376,
-        ""Coluna7"": 28499,
-        ""Coluna8"": 24124,
-        ""Coluna9"": 0,
-        ""Coluna10"": 0,
-        ""Coluna11"": 0,
-        ""Coluna12"": 0,
-        ""Coluna13"": 165878,
-        ""Coluna14"": 1
+        "Share de Canais": "Total",
+        "Coluna1": 11945,
+        "Coluna2": 12919,
+        "Coluna3": 16170,
+        "Coluna4": 17622,
+        "Coluna5": 26223,
+        "Coluna6": 28376,
+        "Coluna7": 28499,
+        "Coluna8": 24124,
+        "Coluna9": 0,
+        "Coluna10": 0,
+        "Coluna11": 0,
+        "Coluna12": 0,
+        "Coluna13": 165878,
+        "Coluna14": 1
       }
     ],
-    ""crescimentoBase"": [
+    "crescimentoBase": [
       {
-        ""mes"": 46023,
-        ""adesoes"": 11941,
-        ""cancelamentos"": 3142,
-        ""crescimento_liquido"": 8799,
-        ""total_base"": 200649,
-        ""total_base_mes_anterior"": 191850,
-        ""crescimento_percentual_base"": 0.0459
+        "mes": 46023,
+        "adesoes": 11941,
+        "cancelamentos": 3142,
+        "crescimento_liquido": 8799,
+        "total_base": 200649,
+        "total_base_mes_anterior": 191850,
+        "crescimento_percentual_base": 0.0459
       },
       {
-        ""mes"": 46054,
-        ""adesoes"": 12916,
-        ""cancelamentos"": 3138,
-        ""crescimento_liquido"": 9778,
-        ""total_base"": 210427,
-        ""total_base_mes_anterior"": 200649,
-        ""crescimento_percentual_base"": 0.0487
+        "mes": 46054,
+        "adesoes": 12916,
+        "cancelamentos": 3138,
+        "crescimento_liquido": 9778,
+        "total_base": 210427,
+        "total_base_mes_anterior": 200649,
+        "crescimento_percentual_base": 0.0487
       },
       {
-        ""mes"": 46082,
-        ""adesoes"": 16170,
-        ""cancelamentos"": 25455,
-        ""crescimento_liquido"": -9285,
-        ""total_base"": 201142,
-        ""total_base_mes_anterior"": 210427,
-        ""crescimento_percentual_base"": -0.0441
+        "mes": 46082,
+        "adesoes": 16170,
+        "cancelamentos": 25455,
+        "crescimento_liquido": -9285,
+        "total_base": 201142,
+        "total_base_mes_anterior": 210427,
+        "crescimento_percentual_base": -0.0441
       },
       {
-        ""mes"": 46113,
-        ""adesoes"": 17622,
-        ""cancelamentos"": 4377,
-        ""crescimento_liquido"": 13245,
-        ""total_base"": 214387,
-        ""total_base_mes_anterior"": 201142,
-        ""crescimento_percentual_base"": 0.0658
+        "mes": 46113,
+        "adesoes": 17622,
+        "cancelamentos": 4377,
+        "crescimento_liquido": 13245,
+        "total_base": 214387,
+        "total_base_mes_anterior": 201142,
+        "crescimento_percentual_base": 0.0658
       },
       {
-        ""mes"": 46143,
-        ""adesoes"": 26223,
-        ""cancelamentos"": 8770,
-        ""crescimento_liquido"": 17453,
-        ""total_base"": 231840,
-        ""total_base_mes_anterior"": 214387,
-        ""crescimento_percentual_base"": 0.0814
+        "mes": 46143,
+        "adesoes": 26223,
+        "cancelamentos": 8770,
+        "crescimento_liquido": 17453,
+        "total_base": 231840,
+        "total_base_mes_anterior": 214387,
+        "crescimento_percentual_base": 0.0814
       },
       {
-        ""mes"": 46174,
-        ""adesoes"": 28376,
-        ""cancelamentos"": 15007,
-        ""crescimento_liquido"": 13369,
-        ""total_base"": 245209,
-        ""total_base_mes_anterior"": 231840,
-        ""crescimento_percentual_base"": 0.0577
+        "mes": 46174,
+        "adesoes": 28376,
+        "cancelamentos": 15007,
+        "crescimento_liquido": 13369,
+        "total_base": 245209,
+        "total_base_mes_anterior": 231840,
+        "crescimento_percentual_base": 0.0577
       },
       {
-        ""mes"": 46204,
-        ""adesoes"": 28499,
-        ""cancelamentos"": 7721,
-        ""crescimento_liquido"": 20778,
-        ""total_base"": 265987,
-        ""total_base_mes_anterior"": 245209,
-        ""crescimento_percentual_base"": 0.0847
+        "mes": 46204,
+        "adesoes": 28499,
+        "cancelamentos": 7721,
+        "crescimento_liquido": 20778,
+        "total_base": 265987,
+        "total_base_mes_anterior": 245209,
+        "crescimento_percentual_base": 0.0847
       },
       {
-        ""mes"": 46235,
-        ""adesoes"": 24124,
-        ""cancelamentos"": 8384,
-        ""crescimento_liquido"": 15740,
-        ""total_base"": 281727,
-        ""total_base_mes_anterior"": 265987,
-        ""crescimento_percentual_base"": 0.0592
+        "mes": 46235,
+        "adesoes": 24124,
+        "cancelamentos": 8384,
+        "crescimento_liquido": 15740,
+        "total_base": 281727,
+        "total_base_mes_anterior": 265987,
+        "crescimento_percentual_base": 0.0592
       },
       {
-        ""mes"": 46266,
-        ""adesoes"": """",
-        ""cancelamentos"": """",
-        ""crescimento_liquido"": """",
-        ""total_base"": """",
-        ""total_base_mes_anterior"": """",
-        ""crescimento_percentual_base"": """"
+        "mes": 46266,
+        "adesoes": "",
+        "cancelamentos": "",
+        "crescimento_liquido": "",
+        "total_base": "",
+        "total_base_mes_anterior": "",
+        "crescimento_percentual_base": ""
       },
       {
-        ""mes"": 46296,
-        ""adesoes"": """",
-        ""cancelamentos"": """",
-        ""crescimento_liquido"": """",
-        ""total_base"": """",
-        ""total_base_mes_anterior"": """",
-        ""crescimento_percentual_base"": """"
+        "mes": 46296,
+        "adesoes": "",
+        "cancelamentos": "",
+        "crescimento_liquido": "",
+        "total_base": "",
+        "total_base_mes_anterior": "",
+        "crescimento_percentual_base": ""
       },
       {
-        ""mes"": 46327,
-        ""adesoes"": """",
-        ""cancelamentos"": """",
-        ""crescimento_liquido"": """",
-        ""total_base"": """",
-        ""total_base_mes_anterior"": """",
-        ""crescimento_percentual_base"": """"
+        "mes": 46327,
+        "adesoes": "",
+        "cancelamentos": "",
+        "crescimento_liquido": "",
+        "total_base": "",
+        "total_base_mes_anterior": "",
+        "crescimento_percentual_base": ""
       },
       {
-        ""mes"": 46357,
-        ""adesoes"": """",
-        ""cancelamentos"": """",
-        ""crescimento_liquido"": """",
-        ""total_base"": """",
-        ""total_base_mes_anterior"": """",
-        ""crescimento_percentual_base"": """"
+        "mes": 46357,
+        "adesoes": "",
+        "cancelamentos": "",
+        "crescimento_liquido": "",
+        "total_base": "",
+        "total_base_mes_anterior": "",
+        "crescimento_percentual_base": ""
       }
     ]
   }
-}"
+}
