@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "time": "SVA",
+    "periodo": "Q3 2026",
+    "trimestre": "Julho a Setembro",
+    "versao": "10/09/2026",
+    "status": "Validado",
+    "metaFinanceira": 7390000,
+    "objetivoEstrategico": "Impulsionar a receita recorrente da Fatura Protegida."
+  },
+  "orcadoRealizado": {
+    "kpis": [
+      { "label": "Orçado no trimestre", "valor": "R$ 7,39 MM", "variacao": null },
+      { "label": "Realizado no trimestre", "valor": "R$ 6,84 MM", "variacao": -7.4 },
+      { "label": "Atingimento da meta", "valor": "92,6%", "variacao": -7.4 },
+      { "label": "Desvio acumulado", "valor": "R$ 550 mil", "variacao": null }
+    ],
+    "mensal": [
+      { "mes": "Jul", "orcado": 2350000, "realizado": 2410000 },
+      { "mes": "Ago", "orcado": 2480000, "realizado": 2260000 },
+      { "mes": "Set", "orcado": 2560000, "realizado": 2170000 }
+    ]
+  },
+  "parcelasPagas": {
+    "kpis": [
+      { "label": "Parcelas emitidas", "valor": "18.420", "variacao": null },
+      { "label": "Parcelas pagas", "valor": "16.735", "variacao": 3.1 },
+      { "label": "Taxa de pagamento", "valor": "90,8%", "variacao": 1.6 },
+      { "label": "Parcelas em atraso", "valor": "1.685", "variacao": -4.2 }
+    ],
+    "mensal": [
+      { "mes": "Jul", "pagas": 5210, "pendentes": 340, "atrasadas": 210 },
+      { "mes": "Ago", "pagas": 5480, "pendentes": 300, "atrasadas": 260 },
+      { "mes": "Set", "pagas": 6045, "pendentes": 415, "atrasadas": 300 }
+    ]
+  },
+  "crescimentoBaseVsAdesoes": {
+    "kpis": [
+      { "label": "Base ativa atual", "valor": "128.940", "variacao": 2.8 },
+      { "label": "Novas adesões no trimestre", "valor": "9.360", "variacao": 12.4 },
+      { "label": "Cancelamentos no trimestre", "valor": "3.115", "variacao": -5.6 },
+      { "label": "Crescimento líquido", "valor": "+6.245", "variacao": 18.9 }
+    ],
+    "mensal": [
+      { "mes": "Jul", "base": 122695, "adesoes": 2890, "cancelamentos": 1010 },
+      { "mes": "Ago", "base": 125680, "adesoes": 3125, "cancelamentos": 1040 },
+      { "mes": "Set", "base": 128940, "adesoes": 3345, "cancelamentos": 1065 }
+    ]
+  }
+}
