@@ -1,5 +1,2 @@
 # Dashboard Executivo Voltz
-
-Versão com todas as barras, linhas, curvas, pontos, cards, botões e seletores arredondados.
-
-Para substituir a versão atual, apague o conteúdo antigo do repositório e envie somente o conteúdo deste projeto.
+Projeto completo com Parcelas Pagas sem tabela, cards por plano, três guias de adesão/base, gráficos individuais, variação mensal e rótulos em todos os gráficos.

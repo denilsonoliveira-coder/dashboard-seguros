@@ -1,5 +1,1 @@
-module.exports = {
-  content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  theme: { extend: { colors: { voltz: '#0A2D87' }, boxShadow: { card: '0 8px 30px rgba(15,23,42,.06)' } } },
-  plugins: []
-};
+module.exports={content:['./app/**/*.{ts,tsx}','./components/**/*.{ts,tsx}'],theme:{extend:{colors:{voltz:'#0A2D87'},boxShadow:{card:'0 8px 30px rgba(15,23,42,.06)'}}},plugins:[]};
