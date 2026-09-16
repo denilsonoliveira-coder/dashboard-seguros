@@ -32,3 +32,38 @@
 .export-mode .h-\[420px\] { height: 425px !important; }
 .export-mode .h-\[245px\] { height: 255px !important; }
 .export-mode .recharts-text { font-size: 12px; }
+
+/* Keep Recharts SVG data labels visible and crisp in html2canvas exports. */
+.recharts-label-list text,
+.recharts-label,
+.recharts-text {
+  opacity: 1 !important;
+  visibility: visible !important;
+  paint-order: stroke;
+  stroke: rgba(244, 246, 249, 0.72);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+}
+.recharts-label-list text[fill="#ffffff"] {
+  stroke: rgba(10, 45, 135, 0.35);
+  stroke-width: 1px;
+}
+.export-mode .recharts-label-list text,
+.export-mode .recharts-label {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+/* Wider use of the browser viewport while keeping a small visual safety margin. */
+@media (min-width: 1024px) {
+  .export-canvas {
+    width: calc(100vw - 24px);
+    max-width: 1780px;
+  }
+}
+
+/* Smaller lateral safe area in the 16:9 slide export. */
+.export-mode {
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
