@@ -43,17 +43,22 @@ function buildCategoryModels(
   labelKey: string,
 ): CategoryModel[] {
   const parsed = matrix(rows, labelKey);
+  const totalRow = rows?.find((row) => row[labelKey] === "Total");
+
+  // The Office Script fills future months with zero. Use the Total row to
+  // identify months that actually have consolidated data, so the variation
+  // compares the last populated month with the previous populated month.
+  const populatedMonths = parsed.months.filter((month) => {
+    if (!totalRow) return true;
+    return (num(totalRow[month.key]) ?? 0) > 0;
+  });
 
   return parsed.items.map((row) => {
-    const values = parsed.months.map((month) => num(row[month.key]));
-    const points = parsed.months
-      .map((month, index) => ({
-        mes: month.label,
-        valor: values[index] ?? 0,
-        valid: values[index] !== null && values[index] !== 0,
-      }))
-      .filter((point) => point.valid)
-      .map(({ mes, valor }) => ({ mes, valor }));
+    const values = populatedMonths.map((month) => num(row[month.key]));
+    const points = populatedMonths.map((month, index) => ({
+      mes: month.label,
+      valor: values[index] ?? 0,
+    }));
 
     return {
       name: String(row[labelKey]),
@@ -368,9 +373,7 @@ export default function Dashboard() {
                   <Kpi
                     label="Base atual"
                     value={integer(validBase.at(-1) ?? 0)}
-                    detail={`Variação no último mês: ${percent(
-                      growthPercent.at(-1) ?? 0,
-                    )}`}
+                    variation={growthPercent.at(-1) ?? null}
                   />
                   <Kpi
                     label="Adesões acumuladas"
