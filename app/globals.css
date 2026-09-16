@@ -1,2 +1,34 @@
 @tailwind base; @tailwind components; @tailwind utilities;
 *{box-sizing:border-box} body{margin:0;background:#f4f6f9;color:#172033;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}.recharts-line-curve,.recharts-area-curve{stroke-linecap:round;stroke-linejoin:round}.recharts-default-tooltip{border-radius:14px!important;border:1px solid #e2e8f0!important;box-shadow:0 12px 28px rgba(15,23,42,.12)!important}
+
+/* The exported element itself is a fixed 1920x1080 slide. html2canvas renders
+   it at scale 2, producing a sharp 3840x2160 PNG without capturing page whitespace. */
+.export-canvas { width: 100%; }
+.export-mode {
+  width: 1920px !important;
+  height: 1080px !important;
+  max-width: none !important;
+  overflow: hidden !important;
+  padding: 22px 28px !important;
+  background: #f4f6f9 !important;
+}
+.export-mode > header {
+  margin-bottom: 16px !important;
+  padding: 22px 28px !important;
+  min-height: 112px;
+}
+.export-mode > header h1 { font-size: 32px !important; line-height: 1.1 !important; }
+.export-mode > header p { font-size: 15px !important; }
+.export-mode .space-y-5 > :not([hidden]) ~ :not([hidden]) { margin-top: 14px !important; }
+.export-mode .gap-5 { gap: 14px !important; }
+.export-mode .gap-4 { gap: 12px !important; }
+.export-mode section { padding: 16px 18px !important; }
+.export-mode section > div.mt-5 { margin-top: 12px !important; }
+.export-mode article { padding: 15px 18px !important; min-height: 118px; }
+.export-mode article p.text-2xl { font-size: 25px !important; line-height: 1.1 !important; }
+.export-mode article p.text-sm { font-size: 14px !important; }
+.export-mode article p.text-xs { font-size: 12px !important; }
+.export-mode section h2 { font-size: 18px !important; line-height: 1.15 !important; }
+.export-mode .h-\[420px\] { height: 425px !important; }
+.export-mode .h-\[245px\] { height: 255px !important; }
+.export-mode .recharts-text { font-size: 12px; }
