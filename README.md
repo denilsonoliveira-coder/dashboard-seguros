@@ -1,12 +1,10 @@
-# Dashboard Seguros Voltz - gráficos ajustados
+# Dashboard Seguros Voltz v2
 
-Quatro visualizações preservadas: Resumo conselho, Orçado vs Realizado, Parcelas Pagas e Crescimento da Base vs Adesões.
+Projeto com quatro visualizações preservadas. Ajustes exclusivos:
+- Orçado vs Realizado: eixo Y secundário, legenda interna e tooltip consolidado por mês.
+- Parcelas Pagas: contraste dos rótulos, legenda interna e tooltip consolidado por mês.
+- Adesão por Plano: rótulos maiores.
+- Crescimento da Base: contraste dos rótulos, eixo Y secundário, legenda interna e tooltip consolidado.
 
-Ajustes visuais:
-- barras horizontais do Resumo conselho proporcionais ao percentual real;
-- eixos, grades, legendas, tooltips e curvas suaves em Orçado vs Realizado;
-- barras empilhadas, eixo X, legenda e tooltip em Parcelas Pagas;
-- eixos, barras mais legíveis, rótulos maiores e curva suave nas guias de crescimento.
-
-## Publicação no Vercel
-Framework Preset: Other. Build Command: `npm run build`. Output Directory: `dist`.
+## Vercel
+Framework Preset: Other; Build Command: `npm run build`; Output Directory: `dist`.
