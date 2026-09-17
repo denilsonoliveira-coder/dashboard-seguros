@@ -1,6 +1,6 @@
 {
-  "name": "dashboard-seguros-final",
-  "version": "1.0.0",
+  "name": "dashboard-seguros-graficos-ajustados",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "node server.js",

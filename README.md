@@ -1,21 +1,12 @@
-# Dashboard Seguros Voltz
+# Dashboard Seguros Voltz - gráficos ajustados
 
-Projeto completo com quatro visualizações:
+Quatro visualizações preservadas: Resumo conselho, Orçado vs Realizado, Parcelas Pagas e Crescimento da Base vs Adesões.
 
-1. Resumo conselho
-2. Orçado vs Realizado
-3. Parcelas Pagas
-4. Crescimento da Base vs Adesões
+Ajustes visuais:
+- barras horizontais do Resumo conselho proporcionais ao percentual real;
+- eixos, grades, legendas, tooltips e curvas suaves em Orçado vs Realizado;
+- barras empilhadas, eixo X, legenda e tooltip em Parcelas Pagas;
+- eixos, barras mais legíveis, rótulos maiores e curva suave nas guias de crescimento.
 
-Na visão Resumo conselho:
-- o gráfico 1 mostra percentual e montante acumulado completo por plano;
-- o gráfico 2 reserva margens para todos os rótulos mensais e usa estrela no plano Básico (5,99);
-- o gráfico 3 foi preservado.
-
-## Build
-
-```bash
-npm run build
-```
-
-O Vercel publica a pasta `dist`, conforme `vercel.json`.
+## Publicação no Vercel
+Framework Preset: Other. Build Command: `npm run build`. Output Directory: `dist`.
