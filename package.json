@@ -1,13 +1,8 @@
 {
-  "name": "dashboard-seguros-v2",
-  "version": "2.0.0",
+  "name": "dashboard-seguros-v4-exportacao",
+  "version": "4.0.0",
   "private": true,
-  "scripts": {
-    "dev": "node server.js",
-    "build": "node build.js",
-    "start": "node server.js"
-  },
-  "engines": {
-    "node": "20.x"
-  }
+  "scripts": {"dev": "node server.js", "build": "node build.js", "start": "node server.js"},
+  "dependencies": {"html2canvas": "1.4.1"},
+  "engines": {"node": "20.x"}
 }

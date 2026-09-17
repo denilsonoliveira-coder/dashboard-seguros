@@ -1,7 +1,11 @@
-# Dashboard Seguros Voltz v3
+# Dashboard Seguros Voltz v4 - Exportação PNG 16:9
 
-Alterações exclusivas:
-- Parcelas Pagas: rótulos da série Start (2,99) exibidos em todos os meses, inclusive segmentos baixos.
-- Crescimento da Base: domínio percentual automático com suporte a valores negativos e margem superior/inferior; março negativo visível.
+Versão baseada no último `app.js` fornecido. A única mudança funcional é a exportação PNG.
 
-Demais visualizações, cálculos, dados, filtros, layout e exportação foram preservados.
+- Captura por `html2canvas` local, sem abrir nova aba.
+- Quadro de exportação: 1920 x 1080.
+- PNG final: 3840 x 2160.
+- Download automático da visualização ativa.
+
+## Vercel
+Framework Preset: Other; Build Command: `npm run build`; Output Directory: `dist`.
