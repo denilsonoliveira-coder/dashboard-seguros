@@ -1,3 +1,5 @@
-# Dashboard Seguros Voltz v5
+# Dashboard Seguros Voltz v6
 
-Única alteração: rótulos percentuais exibidos em todos os pontos da linha de Atingimento nas guias Baseline, Alavanca e Consolidado.
+Única alteração funcional: correção do botão Exportar PNG 16:9.
+
+A imagem é gerada em 3840 x 2160 pixels e baixada automaticamente, sem abrir nova aba.

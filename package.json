@@ -1,6 +1,6 @@
 {
-  "name": "dashboard-seguros-v5-rotulos-atingimento",
-  "version": "5.0.0",
+  "name": "dashboard-seguros-v6-exportacao",
+  "version": "6.0.0",
   "private": true,
   "scripts": {"dev":"node server.js","build":"node build.js","start":"node server.js"},
   "engines": {"node":"20.x"}
