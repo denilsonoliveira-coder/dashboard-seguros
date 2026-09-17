@@ -1,10 +1,7 @@
-# Dashboard Seguros Voltz v2
+# Dashboard Seguros Voltz v3
 
-Projeto com quatro visualizações preservadas. Ajustes exclusivos:
-- Orçado vs Realizado: eixo Y secundário, legenda interna e tooltip consolidado por mês.
-- Parcelas Pagas: contraste dos rótulos, legenda interna e tooltip consolidado por mês.
-- Adesão por Plano: rótulos maiores.
-- Crescimento da Base: contraste dos rótulos, eixo Y secundário, legenda interna e tooltip consolidado.
+Alterações exclusivas:
+- Parcelas Pagas: rótulos da série Start (2,99) exibidos em todos os meses, inclusive segmentos baixos.
+- Crescimento da Base: domínio percentual automático com suporte a valores negativos e margem superior/inferior; março negativo visível.
 
-## Vercel
-Framework Preset: Other; Build Command: `npm run build`; Output Directory: `dist`.
+Demais visualizações, cálculos, dados, filtros, layout e exportação foram preservados.
