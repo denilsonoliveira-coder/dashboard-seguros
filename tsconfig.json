@@ -28,8 +28,8 @@
   "exclude": [
     "node_modules",
     "components/views/**/*",
-    "components/charts/*.tsx",
-    "components/*.tsx",
+    "components/charts/**/*.tsx",
+    "components/**/*.tsx",
     "app/**/*.tsx",
     "lib/**/*.ts"
   ]
