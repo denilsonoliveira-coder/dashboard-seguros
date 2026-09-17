@@ -1,5 +1,5 @@
-# Dashboard Seguros Voltz v6
+# Dashboard Seguros Voltz v7
 
-Única alteração funcional: correção do botão Exportar PNG 16:9.
+Projeto baseado no `app.js (2).txt` fornecido.
 
-A imagem é gerada em 3840 x 2160 pixels e baixada automaticamente, sem abrir nova aba.
+Única alteração funcional: restauração da exportação PNG 16:9 em 3840 x 2160 pixels, com download automático da visualização ativa.
