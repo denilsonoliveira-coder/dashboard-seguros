@@ -3,5 +3,5 @@
   "version": "6.0.0",
   "private": true,
   "scripts": {"dev":"node server.js","build":"node build.js","start":"node server.js"},
-  "engines": {"node":"20.x"}
+  "engines": {"node":"24.x"}
 }
