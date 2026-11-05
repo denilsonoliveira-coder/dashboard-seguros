@@ -64,8 +64,8 @@
       {
         "Baseline (2,99 e 5,99)": "Out/26",
         "Coluna1": 837757.567621859,
-        "Coluna2": "",
-        "Coluna3": ""
+        "Coluna2": 1114026.43,
+        "Coluna3": 1.32977184934585
       },
       {
         "Baseline (2,99 e 5,99)": "Nov/26",
@@ -144,8 +144,8 @@
       {
         "Alavanca (9,99 e 15,99)": "Out/26",
         "Coluna1": 863755,
-        "Coluna2": "",
-        "Coluna3": ""
+        "Coluna2": 1076090.43,
+        "Coluna3": 1.24582830779561
       },
       {
         "Alavanca (9,99 e 15,99)": "Nov/26",
@@ -224,8 +224,8 @@
       {
         "Conslidado": "Out/26",
         "Coluna1": 1701512.56762186,
-        "Coluna2": "",
-        "Coluna3": ""
+        "Coluna2": 2190116.86,
+        "Coluna3": 1.28715879134589
       },
       {
         "Conslidado": "Nov/26",
@@ -271,11 +271,11 @@
         "Coluna7": 156702.91,
         "Coluna8": 151790.34,
         "Coluna9": 136974.89,
-        "Coluna10": "",
+        "Coluna10": 135973.24,
         "Coluna11": "",
         "Coluna12": "",
-        "Coluna13": 1451767.59,
-        "Coluna14": 0.12028454762715
+        "Coluna13": 1587740.83,
+        "Coluna14": 0.111345704515772
       },
       {
         "Share de Planos": "Básico (5,99)",
@@ -288,11 +288,11 @@
         "Coluna7": 877930.34,
         "Coluna8": 913732.57,
         "Coluna9": 915283.98,
-        "Coluna10": "",
+        "Coluna10": 978053.19,
         "Coluna11": "",
         "Coluna12": "",
-        "Coluna13": 6991785.57,
-        "Coluna14": 0.579296417819525
+        "Coluna13": 7969838.76,
+        "Coluna14": 0.558911942580267
       },
       {
         "Share de Planos": "Essencial (9,99)",
@@ -305,11 +305,11 @@
         "Coluna7": 331737.93,
         "Coluna8": 431827.74,
         "Coluna9": 517362.12,
-        "Coluna10": "",
+        "Coluna10": 619240.14,
         "Coluna11": "",
         "Coluna12": "",
-        "Coluna13": 1926841.23,
-        "Coluna14": 0.159646232149246
+        "Coluna13": 2546081.37,
+        "Coluna14": 0.178552581467047
       },
       {
         "Share de Planos": "Plus (15,99)",
@@ -322,11 +322,11 @@
         "Coluna7": 297557.91,
         "Coluna8": 351732.03,
         "Coluna9": 399094.41,
-        "Coluna10": "",
+        "Coluna10": 456850.29,
         "Coluna11": "",
         "Coluna12": "",
-        "Coluna13": 1699049.43,
-        "Coluna14": 0.14077280240408
+        "Coluna13": 2155899.72,
+        "Coluna14": 0.151189771436914
       },
       {
         "Share de Planos": "Total",
@@ -339,10 +339,10 @@
         "Coluna7": 1663929.09,
         "Coluna8": 1849082.68,
         "Coluna9": 1968715.4,
-        "Coluna10": 0,
+        "Coluna10": 2190116.86,
         "Coluna11": 0,
         "Coluna12": 0,
-        "Coluna13": 12069443.82,
+        "Coluna13": 14259560.68,
         "Coluna14": 1
       }
     ]
@@ -377,11 +377,11 @@
         "Coluna7": 13497,
         "Coluna8": 11463,
         "Coluna9": 8383,
-        "Coluna10": "",
+        "Coluna10": 2294,
         "Coluna11": "",
         "Coluna12": "",
-        "Coluna13": 87318,
-        "Coluna14": 0.474036514459748
+        "Coluna13": 89612,
+        "Coluna14": 0.473999629737378
       },
       {
         "Share de Planos": "Essencial (9,99)",
@@ -394,11 +394,11 @@
         "Coluna7": 10989,
         "Coluna8": 9283,
         "Coluna9": 7209,
-        "Coluna10": "",
+        "Coluna10": 1883,
         "Coluna11": "",
         "Coluna12": "",
-        "Coluna13": 66166,
-        "Coluna14": 0.35920543319526
+        "Coluna13": 68049,
+        "Coluna14": 0.359942873766893
       },
       {
         "Share de Planos": "Plus (15,99)",
@@ -411,11 +411,11 @@
         "Coluna7": 4013,
         "Coluna8": 3378,
         "Coluna9": 2731,
-        "Coluna10": "",
+        "Coluna10": 677,
         "Coluna11": "",
         "Coluna12": "",
-        "Coluna13": 30717,
-        "Coluna14": 0.166758052344993
+        "Coluna13": 31394,
+        "Coluna14": 0.166057496495729
       },
       {
         "Share de Planos": "Total",
@@ -428,10 +428,10 @@
         "Coluna7": 28499,
         "Coluna8": 24124,
         "Coluna9": 18323,
-        "Coluna10": 0,
+        "Coluna10": 4854,
         "Coluna11": 0,
         "Coluna12": 0,
-        "Coluna13": 184201,
+        "Coluna13": 189055,
         "Coluna14": 1
       }
     ],
@@ -464,11 +464,11 @@
         "Coluna7": 26707,
         "Coluna8": 22499,
         "Coluna9": 17651,
-        "Coluna10": 0,
+        "Coluna10": 4140,
         "Coluna11": 0,
         "Coluna12": 0,
-        "Coluna13": 168497,
-        "Coluna14": 0.914745305400079
+        "Coluna13": 172637,
+        "Coluna14": 0.913157546745656
       },
       {
         "Share de Canais": "AD",
@@ -481,11 +481,11 @@
         "Coluna7": 1051,
         "Coluna8": 1004,
         "Coluna9": 504,
-        "Coluna10": 0,
+        "Coluna10": 510,
         "Coluna11": 0,
         "Coluna12": 0,
-        "Coluna13": 9007,
-        "Coluna14": 0.0488976715653009
+        "Coluna13": 9517,
+        "Coluna14": 0.050339848192325
       },
       {
         "Share de Canais": "GISA",
@@ -498,11 +498,11 @@
         "Coluna7": 659,
         "Coluna8": 551,
         "Coluna9": 140,
-        "Coluna10": 0,
+        "Coluna10": 162,
         "Coluna11": 0,
         "Coluna12": 0,
-        "Coluna13": 6455,
-        "Coluna14": 0.035043240807596
+        "Coluna13": 6617,
+        "Coluna14": 0.0350003967099521
       },
       {
         "Share de Canais": "Totem",
@@ -515,11 +515,11 @@
         "Coluna7": 82,
         "Coluna8": 70,
         "Coluna9": 28,
-        "Coluna10": 0,
+        "Coluna10": 42,
         "Coluna11": 0,
         "Coluna12": 0,
-        "Coluna13": 242,
-        "Coluna14": 0.00131378222702374
+        "Coluna13": 284,
+        "Coluna14": 0.00150220835206686
       },
       {
         "Share de Canais": "Total",
@@ -532,10 +532,10 @@
         "Coluna7": 28499,
         "Coluna8": 24124,
         "Coluna9": 18323,
-        "Coluna10": 0,
+        "Coluna10": 4854,
         "Coluna11": 0,
         "Coluna12": 0,
-        "Coluna13": 184201,
+        "Coluna13": 189055,
         "Coluna14": 1
       }
     ],
@@ -623,12 +623,12 @@
       },
       {
         "mes": "Out/26",
-        "adesoes": "",
-        "cancelamentos": "",
-        "crescimento_liquido": "",
-        "total_base": "",
-        "total_base_mes_anterior": "",
-        "crescimento_percentual_base": ""
+        "adesoes": 4854,
+        "cancelamentos": 5921,
+        "crescimento_liquido": -1067,
+        "total_base": 289843,
+        "total_base_mes_anterior": 290910,
+        "crescimento_percentual_base": -0.0037
       },
       {
         "mes": "Nov/26",
